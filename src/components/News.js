@@ -39,7 +39,7 @@ export class News extends Component {
       this.setState({
         page: this.state.page + 1,
         articles: parsedData.articles,
-        // Loading:false
+        
       })
     }
 
@@ -56,7 +56,7 @@ export class News extends Component {
     this.setState({
       page: this.state.page - 1,
       articles: parsedData.articles,
-      // Loading:false
+      
     })
     
     
@@ -65,8 +65,8 @@ export class News extends Component {
     return (
       <div className='container my-3'>
 
-        <h1 className=' text-center my-4' >News Monkey- Top headline</h1>
-        {/* {this.state.Loading && <Spinner />} */}
+        <h1 className=' text-center my-4' >Newsy- World News at a click</h1>
+        
         <div className="row mb-3">
           {this.state.articles.map((element) => {
 
